@@ -1,0 +1,17 @@
+# Dépendances et builds
+node_modules/
+dist/
+.vercel/
+.netlify/
+
+# Secrets
+.env
+.env.*
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Captures de référence (non utilisées par le site, visuels de tiers)
+assets/media_*.png

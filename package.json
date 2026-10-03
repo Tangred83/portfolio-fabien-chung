@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-fabien-chung",
+  "version": "1.0.0",
+  "description": "Site portfolio de Fabien Chung, consultant PIM & DAM (luxe et beauté)",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "pim",
+    "dam",
+    "product-data",
+    "luxury"
+  ],
+  "author": "Fabien Chung",
+  "license": "UNLICENSED",
+  "private": true
+}
