@@ -1418,6 +1418,11 @@ body.modal-open {
   border-bottom: 1px solid var(--border-subtle);
 }
 
+.case-metrics.metrics-4 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  row-gap: 2.25rem;
+}
+
 .case-metric dt {
   font-family: var(--font-serif);
   font-size: clamp(2rem, 3.4vw, 2.6rem);

@@ -59,19 +59,20 @@ const PORTFOLIO_DATA = {
         shortTitle: "Concevoir le PIM avec le métier",
         headline: "Donner aux équipes en boutique une donnée produit juste, pour un catalogue qui va de la joaillerie au prêt-à-porter.",
         metrics: [
-          { value: "9 mois", label: "de cadrage, soutenu par la direction", short: "de cadrage" },
-          { value: "~40", label: "entretiens et ateliers métier" },
+          { value: "500+ → 200", label: "attributs dans le modèle de données", short: "attributs" },
+          { value: "130k", label: "références actives dans le PIM" },
+          { value: "9 mois", label: "de cadrage, soutenu par la direction" },
           { value: "Sept. 2026", label: "mise en production" }
         ],
         context: "Louis Vuitton construit un PIM (Akeneo) commun au digital et aux boutiques. La difficulté tient à la diversité de l’offre : un diamant, un sac en cuir exotique, une montre et une veste n’obéissent pas aux mêmes règles, et chacun doit pourtant être décrit de façon fiable.",
         role: [
           "Porter la voix du Retail dans la conception : ce dont les équipes en boutique ont vraiment besoin, et pourquoi.",
-          "Cadrer le modèle de données avec les métiers, l’IT et l’éditeur, à partir des systèmes existants (SAP, PLM).",
+          "Cadrer le modèle de données avec les métiers (une quarantaine d’entretiens et d’ateliers), l’IT et l’éditeur, à partir des systèmes existants (SAP, PLM).",
           "Traduire des produits très techniques en règles simples : pierres (carat, pureté, couleur), cuirs exotiques, tailles et coupes, montres.",
           "Organiser les décisions : rôles de chacun, préparation des comités de pilotage et du go / no-go."
         ],
         outcomes: [
-          "Un modèle de données nettement simplifié, plus lisible pour les équipes qui l’alimentent.",
+          "Un modèle de données ramené de plus de 500 à 200 attributs, plus lisible pour les équipes qui l’alimentent.",
           "Des responsabilités claires entre marketing, industriel, DAM et retail.",
           "Une mise en production en septembre 2026, avec un suivi de la qualité des fiches produit."
         ],
@@ -295,19 +296,20 @@ const PORTFOLIO_DATA = {
         shortTitle: "Designing the PIM with the business",
         headline: "Giving store teams accurate product data, for a catalog that ranges from fine jewelry to ready-to-wear.",
         metrics: [
-          { value: "9 months", label: "of scoping, backed by management", short: "of scoping" },
-          { value: "~40", label: "business interviews and workshops" },
+          { value: "500+ → 200", label: "attributes in the data model", short: "attributes" },
+          { value: "130k", label: "active SKUs in the PIM" },
+          { value: "9 months", label: "of scoping, backed by management" },
           { value: "Sept. 2026", label: "go-live" }
         ],
         context: "Louis Vuitton is building a PIM (Akeneo) shared by digital and retail. The challenge is the sheer diversity of the offer: a diamond, an exotic leather bag, a watch and a jacket follow different rules, yet each must be described reliably.",
         role: [
           "Bring the Retail voice into the design: what store teams really need, and why.",
-          "Scope the data model with the business, IT and the vendor, starting from existing systems (SAP, PLM).",
+          "Scope the data model with the business (some forty interviews and workshops), IT and the vendor, starting from existing systems (SAP, PLM).",
           "Turn highly technical products into simple rules: stones (carat, clarity, color), exotic leathers, sizes and fits, watches.",
           "Structure decision-making: who owns what, steering committee preparation, go / no-go."
         ],
         outcomes: [
-          "A much simpler data model, easier to read for the teams who maintain it.",
+          "A data model cut from more than 500 to 200 attributes, easier to read for the teams who maintain it.",
           "Clear ownership across marketing, industrial, DAM and retail.",
           "Go-live in September 2026, with ongoing monitoring of product data quality."
         ],

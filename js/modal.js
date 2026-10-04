@@ -100,7 +100,7 @@ class CaseStudyModal {
         <div class="case-body">
           <p class="case-lead">${p.headline}</p>
 
-          <dl class="case-metrics">
+          <dl class="case-metrics metrics-${p.metrics.length}">
             ${p.metrics.map(m => `
               <div class="case-metric">
                 <dt>${m.value}</dt>
