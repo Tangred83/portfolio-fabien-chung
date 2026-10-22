@@ -60,7 +60,7 @@ const PORTFOLIO_DATA = {
         headline: "Donner aux équipes en boutique une donnée produit juste, pour un catalogue qui va de la joaillerie au prêt-à-porter.",
         metrics: [
           { value: "500+ → 200", label: "attributs dans le modèle de données", short: "attributs" },
-          { value: "130k", label: "références actives dans le PIM" },
+          { value: "170k", label: "références actives dans le PIM" },
           { value: "9 mois", label: "de cadrage, soutenu par la direction" },
           { value: "Sept. 2026", label: "mise en production" }
         ],
@@ -297,7 +297,7 @@ const PORTFOLIO_DATA = {
         headline: "Giving store teams accurate product data, for a catalog that ranges from fine jewelry to ready-to-wear.",
         metrics: [
           { value: "500+ → 200", label: "attributes in the data model", short: "attributes" },
-          { value: "130k", label: "active SKUs in the PIM" },
+          { value: "170k", label: "active SKUs in the PIM" },
           { value: "9 months", label: "of scoping, backed by management" },
           { value: "Sept. 2026", label: "go-live" }
         ],
