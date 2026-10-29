@@ -5,6 +5,8 @@
  *
  * Images : chaque projet pointe vers un fichier de assets/cases/.
  * Tant que le fichier n’existe pas, un fond neutre s’affiche à la place.
+ * Avec un logo (assets/logos/), le visuel est traité comme un packshot :
+ * fond ivoire, produit en entier, logo et légende (imageCaption) par-dessus.
  */
 
 const PORTFOLIO_DATA = {
@@ -56,7 +58,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Retail",
         backgroundWord: "Vuitton",
         image: "assets/cases/louis-vuitton.jpg",
-        shortTitle: "Concevoir le PIM avec le métier",
+        logo: "assets/logos/louis-vuitton.svg",
+        imageCaption: "Sac Neverfull MM · Louis Vuitton",
+        shortTitle: "De la conception au déploiement d’un PIM mondial, sur toutes les BU",
         headline: "Donner aux équipes en boutique une donnée produit juste, pour un catalogue qui va de la joaillerie au prêt-à-porter.",
         metrics: [
           { value: "500+ → 200", label: "attributs dans le modèle de données", short: "attributs" },
@@ -87,7 +91,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Gouvernance",
         backgroundWord: "Dior",
         image: "assets/cases/dior.jpg",
-        shortTitle: "Reprendre la main sur la donnée",
+        logo: "assets/logos/dior.svg",
+        imageCaption: "Sac Lady Dior · Dior",
+        shortTitle: "Fiabiliser le PIM et déployer 4 applications de commande",
         headline: "Remettre d’aplomb un PIM devenu trop permissif, et outiller les commandes spéciales des clients les plus exigeants.",
         metrics: [
           { value: "4", label: "applications déployées dans le monde", short: "applications déployées" },
@@ -117,7 +123,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Multi-marques",
         backgroundWord: "L’Oréal",
         image: "assets/cases/loreal.jpg",
-        shortTitle: "Déployer un PIM sur 50 marques",
+        logo: "assets/logos/loreal.svg",
+        imageCaption: "Laque Elnett Satin · L’Oréal Paris",
+        shortTitle: "Déployer le PIM de L’Oréal France sur 50 marques",
         headline: "Déployer le PIM pour la France au sein d’un programme mondial, et alimenter une trentaine de distributeurs.",
         metrics: [
           { value: "50", label: "marques déployées, sur 4 divisions", short: "marques déployées" },
@@ -146,7 +154,7 @@ const PORTFOLIO_DATA = {
         category: "Entrepreneuriat",
         backgroundWord: "zoulloo",
         image: "assets/cases/zoulloo.jpg",
-        shortTitle: "Créer une marketplace de talents data",
+        shortTitle: "Co-fonder et vendre une marketplace de freelances data",
         headline: "Co-fonder une plateforme qui met en relation les entreprises et des freelances experts de la data et de la connaissance client.",
         metrics: [
           { value: "1 M€", label: "de volume d’affaires" },
@@ -175,7 +183,7 @@ const PORTFOLIO_DATA = {
         category: "Data · Décisionnel",
         backgroundWord: "Data",
         image: "assets/cases/bi-data.jpg",
-        shortTitle: "Les fondations techniques",
+        shortTitle: "Construire les tableaux de bord de Decathlon, Darty ou InVivo",
         headline: "Trois ans à construire des outils décisionnels pour la distribution et l’agro-industrie.",
         metrics: [
           { value: "3 ans", label: "de développement BI et data", short: "de BI et data" },
@@ -293,7 +301,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Retail",
         backgroundWord: "Vuitton",
         image: "assets/cases/louis-vuitton.jpg",
-        shortTitle: "Designing the PIM with the business",
+        logo: "assets/logos/louis-vuitton.svg",
+        imageCaption: "Neverfull MM bag · Louis Vuitton",
+        shortTitle: "Designing and rolling out a global PIM across every business unit",
         headline: "Giving store teams accurate product data, for a catalog that ranges from fine jewelry to ready-to-wear.",
         metrics: [
           { value: "500+ → 200", label: "attributes in the data model", short: "attributes" },
@@ -324,7 +334,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Governance",
         backgroundWord: "Dior",
         image: "assets/cases/dior.jpg",
-        shortTitle: "Taking back control of the data",
+        logo: "assets/logos/dior.svg",
+        imageCaption: "Lady Dior bag · Dior",
+        shortTitle: "Restoring trust in the PIM and rolling out 4 order apps",
         headline: "Fixing a PIM that had become too permissive, and equipping special orders for the most demanding clients.",
         metrics: [
           { value: "4", label: "applications deployed worldwide", short: "applications deployed" },
@@ -354,7 +366,9 @@ const PORTFOLIO_DATA = {
         category: "PIM · Multi-brand",
         backgroundWord: "L’Oréal",
         image: "assets/cases/loreal.jpg",
-        shortTitle: "Rolling out a PIM across 50 brands",
+        logo: "assets/logos/loreal.svg",
+        imageCaption: "Elnett Satin hairspray · L’Oréal Paris",
+        shortTitle: "Rolling out L’Oréal France’s PIM across 50 brands",
         headline: "Deploying the PIM for France within a global program, and feeding some thirty retailers.",
         metrics: [
           { value: "50", label: "brands deployed, across 4 divisions", short: "brands deployed" },
@@ -383,7 +397,7 @@ const PORTFOLIO_DATA = {
         category: "Entrepreneurship",
         backgroundWord: "zoulloo",
         image: "assets/cases/zoulloo.jpg",
-        shortTitle: "Building a marketplace for data talent",
+        shortTitle: "Co-founding and selling a marketplace for data freelancers",
         headline: "Co-founding a platform that connects companies with freelance experts in data and customer insight.",
         metrics: [
           { value: "€1M", label: "business volume" },
@@ -412,7 +426,7 @@ const PORTFOLIO_DATA = {
         category: "Data · Analytics",
         backgroundWord: "Data",
         image: "assets/cases/bi-data.jpg",
-        shortTitle: "The technical foundations",
+        shortTitle: "Building dashboards for Decathlon, Darty and InVivo",
         headline: "Three years building decision-support tools for retail and agribusiness.",
         metrics: [
           { value: "3 years", label: "of BI and data development", short: "of BI and data" },

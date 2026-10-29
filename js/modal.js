@@ -83,9 +83,10 @@ class CaseStudyModal {
           </div>
         </div>
 
-        <header class="case-hero">
-          <div class="case-hero-media media-slot" data-placeholder="${p.backgroundWord}">
+        <header class="case-hero${p.logo ? ' has-product' : ''}">
+          <div class="case-hero-media media-slot${p.logo ? ' media-product' : ''}" data-placeholder="${p.backgroundWord}">
             <img src="${p.image}" alt="" onerror="markEmptyMedia(this)" />
+            ${productMediaExtras(p)}
           </div>
           <div class="case-hero-text">
             <p class="case-kicker">

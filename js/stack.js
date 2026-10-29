@@ -54,8 +54,9 @@ class CardStackEngine {
       const kpi = proj.metrics[0];
       card.innerHTML = `
         <div class="card-inner">
-          <div class="card-image-wrap media-slot" data-placeholder="${proj.backgroundWord}">
+          <div class="card-image-wrap media-slot${proj.logo ? ' media-product' : ''}" data-placeholder="${proj.backgroundWord}">
             <img src="${proj.image}" alt="" class="card-img" draggable="false" onerror="markEmptyMedia(this)" />
+            ${productMediaExtras(proj)}
             <div class="card-overlay"></div>
             <div class="card-glass-badge">
               <span class="badge-num">${proj.number}</span>

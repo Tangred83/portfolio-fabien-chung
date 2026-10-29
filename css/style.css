@@ -370,16 +370,19 @@ body.modal-open {
 }
 
 .btn-prev {
-  left: 7rem;
+  left: 8.5rem;
 }
 
 .btn-next {
-  right: 7rem;
+  right: 8.5rem;
 }
 
 .nav-circle-badge {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 0.72rem;
+  /* compense l'espacement après la dernière lettre, pour centrer le mot */
+  padding-left: 0.2em;
   border: 1px solid var(--border-subtle);
   border-radius: 50%;
   display: flex;
@@ -390,14 +393,15 @@ body.modal-open {
   transition: var(--transition-smooth);
 }
 
-.btn-next:hover .nav-circle-badge {
+.stack-nav-btn:hover .nav-circle-badge,
+.stack-nav-btn:focus-visible .nav-circle-badge {
   border-color: var(--gold-accent);
   transform: scale(1.08);
   box-shadow: 0 0 20px var(--gold-muted);
 }
 
-.btn-prev:hover {
-  color: var(--gold-accent);
+.stack-nav-btn:focus-visible {
+  outline: none;
 }
 
 /* Commutateur cartes / grille */
@@ -916,6 +920,123 @@ body.modal-open {
   letter-spacing: 0.02em;
   color: rgba(243, 229, 171, 0.32);
   pointer-events: none;
+}
+
+/* Packshot : fond ivoire, produit en entier, logo et légende par-dessus.
+   Sans visuel déposé, le logo seul s'affiche au centre. */
+.media-product {
+  background: radial-gradient(90% 85% at 50% 42%, #fbf9f5 0%, #ebe5da 100%);
+}
+
+.media-product > img {
+  object-fit: contain;
+  padding: 13% 14% 15%;
+  mix-blend-mode: multiply;
+}
+
+.media-product .card-overlay,
+.media-product .grid-img-overlay {
+  background: linear-gradient(180deg, transparent 65%, rgba(30, 26, 20, 0.08) 100%);
+}
+
+.media-brand {
+  position: absolute;
+  top: 1.05rem;
+  right: 1.1rem;
+  z-index: 2;
+  display: flex;
+  pointer-events: none;
+}
+
+.media-logo {
+  display: block;
+  height: 1.15rem;
+  width: auto;
+  max-width: 6.5rem;
+  object-fit: contain;
+  object-position: right center;
+}
+
+.media-caption {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 0.85rem;
+  z-index: 2;
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6e6a62;
+  pointer-events: none;
+}
+
+.media-product.is-empty::after,
+.media-product.is-empty .media-caption {
+  display: none;
+}
+
+.media-product.is-empty .media-brand {
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.media-product.is-empty .media-logo {
+  height: 2.4rem;
+  max-width: 14rem;
+  object-position: center;
+}
+
+/* Fiche projet avec packshot : texte à gauche, produit à droite */
+.case-hero.has-product {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: stretch;
+  background: var(--bg-card);
+}
+
+.case-hero.has-product::after {
+  content: none;
+}
+
+.case-hero.has-product .case-hero-media {
+  position: relative;
+  inset: auto;
+  order: 2;
+  min-height: clamp(300px, 46vh, 480px);
+}
+
+.case-hero.has-product .case-hero-text {
+  align-self: end;
+}
+
+.case-hero.has-product .case-title {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.case-hero.has-product .media-logo {
+  height: 1.5rem;
+  max-width: 9rem;
+}
+
+.case-hero.has-product .media-product.is-empty .media-logo {
+  height: 3rem;
+  max-width: 18rem;
+}
+
+.case-hero.has-product .media-caption {
+  left: 1.4rem;
+  bottom: 1.2rem;
+  font-size: 0.65rem;
+}
+
+@media (max-width: 768px) {
+  .case-hero.has-product {
+    grid-template-columns: 1fr;
+  }
+  .case-hero.has-product .case-hero-media {
+    order: 0;
+    min-height: 240px;
+  }
 }
 
 /* --------------------------------------------------
@@ -1532,10 +1653,10 @@ body.modal-open {
     left: 2rem;
   }
   .btn-prev {
-    left: 4rem;
+    left: 7rem;
   }
   .btn-next {
-    right: 4rem;
+    right: 7rem;
   }
   .view-mode-pill-toggle {
     right: 2rem;
@@ -1599,9 +1720,15 @@ body.modal-open {
     right: calc(50% - 8.5rem);
   }
   .nav-circle-badge {
-    width: 2.75rem;
-    height: 2.75rem;
-    font-size: 0.7rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    font-size: 0.62rem;
+  }
+  .card-content {
+    padding: 1.1rem 1.3rem;
+  }
+  .card-title {
+    font-size: 1.22rem;
   }
   .view-mode-pill-toggle {
     top: 5.25rem;

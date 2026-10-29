@@ -45,8 +45,9 @@ class GridViewEngine {
 
       item.innerHTML = `
         <div class="grid-item-inner">
-          <div class="grid-img-wrap media-slot" data-placeholder="${proj.backgroundWord}">
+          <div class="grid-img-wrap media-slot${proj.logo ? ' media-product' : ''}" data-placeholder="${proj.backgroundWord}">
             <img src="${proj.image}" alt="" class="grid-img" loading="lazy" onerror="markEmptyMedia(this)" />
+            ${productMediaExtras(proj)}
             <div class="grid-img-overlay"></div>
             <span class="grid-num">${proj.number}</span>
           </div>

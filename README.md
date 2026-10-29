@@ -16,15 +16,19 @@ Déposer les fichiers suivants (noms exacts). Tant qu'un fichier manque, un fond
 
 | Fichier | Emplacement | Format conseillé |
 |---|---|---|
-| `assets/cases/louis-vuitton.jpg` | Carte et fiche Louis Vuitton | paysage, 1600 × 1000 |
-| `assets/cases/dior.jpg` | Carte et fiche Dior | paysage, 1600 × 1000 |
-| `assets/cases/loreal.jpg` | Carte et fiche L'Oréal | paysage, 1600 × 1000 |
+| `assets/cases/louis-vuitton.jpg` | Carte et fiche Louis Vuitton (packshot Neverfull MM) | packshot sur fond blanc, carré, 1200 × 1200 |
+| `assets/cases/dior.jpg` | Carte et fiche Dior (packshot Lady Dior) | packshot sur fond blanc, carré, 1200 × 1200 |
+| `assets/cases/loreal.jpg` | Carte et fiche L'Oréal (packshot Elnett Satin) | packshot sur fond blanc, carré, 1200 × 1200 |
 | `assets/cases/zoulloo.jpg` | Carte et fiche zoulloo | paysage, 1600 × 1000 |
 | `assets/cases/bi-data.jpg` | Carte et fiche BI & Big Data | paysage, 1600 × 1000 |
 | `assets/approche.jpg` | Section Approche | portrait, 1200 × 1500 |
 | `assets/fabien.jpg` | Section À propos | portrait, 1000 × 1250 |
 
-Les images sont recadrées automatiquement : garder le sujet au centre. Utiliser des photos libres de droits ou personnelles, sans logo de marque visible.
+Les photos sont recadrées automatiquement : garder le sujet au centre.
+
+**Projets de marque (Louis Vuitton, Dior, L'Oréal)** : le visuel est un packshot officiel d'un produit iconique, affiché en entier sur fond ivoire (le fond blanc du packshot s'y fond), avec le logo de la marque (`assets/logos/`, versions du domaine public sur Wikimedia Commons) et une légende (`imageCaption` dans `js/data.js`, FR et EN). Si l'on change de produit, changer aussi la légende. Pas de photo de défilé ni de visuel porté (droits des mannequins et des photographes). Tant que le packshot manque, le logo seul s'affiche au centre.
+
+**Autres projets** : photos libres de droits ou personnelles.
 
 ## Voir le site en local
 

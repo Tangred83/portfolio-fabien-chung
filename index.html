@@ -19,6 +19,13 @@
       if (slot) slot.classList.add('is-empty');
       img.remove();
     }
+
+    /* Packshot : logo de la marque et légende posés sur le visuel. */
+    function productMediaExtras(p) {
+      if (!p.logo) return '';
+      var caption = p.imageCaption ? '<span class="media-caption">' + p.imageCaption + '</span>' : '';
+      return '<span class="media-brand"><img class="media-logo" src="' + p.logo + '" alt="' + p.brand + '" draggable="false"></span>' + caption;
+    }
   </script>
 </head>
 <body class="theme-noir">
@@ -61,7 +68,7 @@
     </div>
 
     <button class="stack-nav-btn btn-prev" id="btn-stack-prev" type="button" data-i18n-aria="prevAria" aria-label="Projet précédent">
-      <span>PREV</span>
+      <span class="nav-circle-badge"><span>PREV</span></span>
       <span class="nav-dash" aria-hidden="true"></span>
     </button>
 
@@ -70,8 +77,8 @@
     </div>
 
     <button class="stack-nav-btn btn-next" id="btn-stack-next" type="button" data-i18n-aria="nextAria" aria-label="Projet suivant">
-      <span class="nav-circle-badge"><span>NEXT</span></span>
       <span class="nav-dash" aria-hidden="true"></span>
+      <span class="nav-circle-badge"><span>NEXT</span></span>
     </button>
 
     <div class="view-mode-pill-toggle">
